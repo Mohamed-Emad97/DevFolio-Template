@@ -1,0 +1,63 @@
+//Import Files 
+
+//Variblies File
+@use "../../variblies/variblies.scss" as *;
+
+//Mixin File
+@use "../../helpers/mixin.scss" as *;
+
+#post{
+    background-color: $alt-text-color;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.21);
+    h2{
+        color: $heading-color;
+    }
+    .desc{
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+            width: 3px;
+            background-color: $main-color;
+        }
+        ul{
+            li{
+                span{
+                    color: $text-color;
+                    cursor: pointer;
+                    transition: all $trasition-time;
+                }
+                .icon{
+                    color: $main-color;
+                }
+                .text{
+                    &:hover{
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+    p{
+        color: $text-color;
+        font-size: 18px;
+    }
+    .title{
+        color: $text-color;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 80%;
+            width: 3px;
+            background-color: $main-color;
+        }
+    }
+}

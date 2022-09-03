@@ -1,0 +1,40 @@
+//Import Files 
+
+//Variblies File
+@use "../../variblies/variblies.scss" as *;
+
+//Mixin File
+@use "../../helpers/mixin.scss" as *;
+
+#comment{
+    background-color: $alt-text-color;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.21);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.21);
+    .title{
+        h2{
+            color: $heading-color;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+            width: 3px;
+            background-color: $main-color;
+        }
+    }
+    .commentBox{
+        gap: 20px;
+        .txt{
+            h3{
+                color: $heading-color;
+            }
+            span,p{
+                color: $text-color;
+            }
+        }
+    }
+}

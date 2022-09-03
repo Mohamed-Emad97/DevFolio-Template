@@ -1,0 +1,29 @@
+// Files Imports
+
+//Import Variblies File
+@use "../variblies/variblies.scss" as *;
+
+//Import Mixin File
+@use "../helpers/mixin.scss" as *;
+
+#static{
+    background-image: url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    &::after{
+        content: "";
+        @include overlay(rgba(0,120,255,0.3), 0);
+    }
+    .box{
+        position: relative;
+        z-index: 22;
+        .icon{
+            border: 6px solid $hover-color;
+            width: 90px;
+            height: 90px;
+        }
+        h3{
+            font-size: 40px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// Files Imports
+
+//Import Variblies File
+@use "../variblies/variblies.scss" as *;
+
+//Import Mixin File
+@use "../helpers/mixin.scss" as *;
+
+footer{
+    background-color: $main-color;
+    .content{
+        a{
+            color: $alt-text-color;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+// Files Imports
+
+//Import Variblies File
+@use "../variblies/variblies.scss" as *;
+
+//Import Mixin File
+@use "../helpers/mixin.scss" as *;
+
+#services{
+    background-color: $boder-color;
+    .mainHeading{
+        @include mainHeading();
+    }
+    .card{
+        border: none;
+        outline: none;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
+        transition: all $trasition-time;
+        .icon{
+            border: 10px solid $main-color;
+            width: 120px;
+            height: 120px;
+            color: $main-color;
+            transition: all $trasition-time;
+        }
+        &:hover .icon{
+            color: $alt-text-color;
+            background-color: $main-color;
+            border-color: $hover-color;
+        }
+        h3{
+            color: $heading-color;
+        }
+        p{
+            color: $text-color;
+        }
+    }
+}

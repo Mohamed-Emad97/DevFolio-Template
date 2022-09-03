@@ -1,0 +1,83 @@
+// Files Imports
+
+//Import Variblies File
+@use "../variblies/variblies.scss" as *;
+
+//Import Mixin File
+@use "../helpers/mixin.scss" as *;
+
+#blog{
+    background-color: $boder-color;
+    .mainHeading{
+        @include mainHeading();
+    }
+    .post{
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.21);
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.21);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.21);
+        .info{
+            h3{
+                a{
+                    text-decoration: none;
+                    color: $heading-color;
+                    transition: all $trasition-time;
+                    &:hover{
+                        color: $main-color;
+                    }
+                }
+            }
+            p{
+                color: $text-color;
+            }
+        }
+        .desc{
+            background-color: $boder-color;
+            border-top: 1px solid $heading-color;
+            .img-contnet{
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+                span{
+                    color: $text-color;
+                    cursor: pointer;
+                    transition: all $trasition-time;
+                    &:hover{
+                        color: $main-color;
+                    }
+                }
+            }
+            .time{
+                color: $text-color;
+            }
+        }
+        .title{
+            background-color: $main-color;
+            width: 28%;
+            height: 8%;
+            font-size: 10px;
+            position: absolute;
+            top: 49%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    #blog .post .title{
+        top: 45%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #blog .post .title{
+        top: 39%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #blog .post .title{
+        display: none;
+    }
+}

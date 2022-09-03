@@ -1,0 +1,519 @@
+header {
+  z-index: 3000000;
+}
+header nav .link {
+  position: relative;
+}
+header nav .link::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header nav .link:hover::before {
+  width: 85%;
+}
+
+#home {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#home .caption {
+  position: relative;
+  z-index: 22;
+}
+#home .caption h1 {
+  font-size: 70px;
+}
+
+#about {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+#about .card {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
+}
+#about .card .info .img {
+  margin-left: 10px;
+}
+#about .card .info .data ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#about .card .info .data ul span {
+  margin-right: 5px;
+}
+#about .card .info .data ul .title {
+  color: #1e1e1e;
+}
+#about .card .info .data ul .desc {
+  color: #4e4e4e;
+}
+#about .card .info .skills h3 {
+  color: #1e1e1e;
+}
+#about .card .content h3 {
+  color: #1e1e1e;
+}
+#about .card .content h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25%;
+  height: 3px;
+  background-color: #0078ff;
+}
+#about .card .content p {
+  color: #4e4e4e;
+  font-size: 20px;
+}
+
+#services {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+#services .mainHeading h2 {
+  color: #1e1e1e;
+  font-size: 50px;
+}
+#services .mainHeading p {
+  color: #4e4e4e;
+  font-size: 18px;
+}
+#services .mainHeading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 15%;
+  height: 3px;
+  background-color: #0078ff;
+}
+#services .card {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#services .card .icon {
+  border: 10px solid #0078ff;
+  width: 120px;
+  height: 120px;
+  color: #0078ff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#services .card:hover .icon {
+  color: #fff;
+  background-color: #0078ff;
+  border-color: #cde1f8;
+}
+#services .card h3 {
+  color: #1e1e1e;
+}
+#services .card p {
+  color: #4e4e4e;
+}
+
+#static {
+  background-image: url(../images/counters-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#static::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 120, 255, 0.3);
+}
+#static .box {
+  position: relative;
+  z-index: 22;
+}
+#static .box .icon {
+  border: 6px solid #cde1f8;
+  width: 90px;
+  height: 90px;
+}
+#static .box h3 {
+  font-size: 40px;
+}
+
+#portfilio {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+#portfilio .mainHeading h2 {
+  color: #1e1e1e;
+  font-size: 50px;
+}
+#portfilio .mainHeading p {
+  color: #4e4e4e;
+  font-size: 18px;
+}
+#portfilio .mainHeading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 15%;
+  height: 3px;
+  background-color: #0078ff;
+}
+#portfilio .card {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+}
+#portfilio .card .img img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#portfilio .card:hover .img img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#portfilio .card .data .info h3 {
+  color: #1e1e1e;
+}
+#portfilio .card .data .info p {
+  font-size: 15px;
+  color: #4e4e4e;
+}
+#portfilio .card .data .info p span {
+  color: #0078ff;
+}
+#portfilio .card .data .icon {
+  color: #0078ff;
+  cursor: pointer;
+  border: 1px solid #0078ff;
+  width: 50px;
+  height: 50px;
+}
+
+#testmionail {
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#testmionail::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 120, 255, 0.4);
+}
+#testmionail .content {
+  position: relative;
+  z-index: 22;
+  gap: 20px;
+}
+
+#blog {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+#blog .mainHeading h2 {
+  color: #1e1e1e;
+  font-size: 50px;
+}
+#blog .mainHeading p {
+  color: #4e4e4e;
+  font-size: 18px;
+}
+#blog .mainHeading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 15%;
+  height: 3px;
+  background-color: #0078ff;
+}
+#blog .post {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+}
+#blog .post .info h3 a {
+  text-decoration: none;
+  color: #1e1e1e;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#blog .post .info h3 a:hover {
+  color: #0078ff;
+}
+#blog .post .info p {
+  color: #4e4e4e;
+}
+#blog .post .desc {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid #1e1e1e;
+}
+#blog .post .desc .img-contnet img {
+  width: 50px;
+  height: 50px;
+}
+#blog .post .desc .img-contnet span {
+  color: #4e4e4e;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#blog .post .desc .img-contnet span:hover {
+  color: #0078ff;
+}
+#blog .post .desc .time {
+  color: #4e4e4e;
+}
+#blog .post .title {
+  background-color: #0078ff;
+  width: 28%;
+  height: 8%;
+  font-size: 10px;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  #blog .post .title {
+    top: 45%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #blog .post .title {
+    top: 39%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #blog .post .title {
+    display: none;
+  }
+}
+#contact {
+  background-image: url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 120, 255, 0.6);
+}
+#contact .card {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.31);
+  z-index: 33;
+}
+#contact .card h3 {
+  color: #1e1e1e;
+}
+#contact .card h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25%;
+  height: 3px;
+  background-color: #0078ff;
+}
+#contact .card .contactForm form {
+  gap: 15px;
+}
+#contact .card .contactForm form input, #contact .card .contactForm form textarea {
+  border: 1px solid #ced4da;
+  color: #4e4e4e;
+  outline: none;
+}
+#contact .card .contactForm form textarea {
+  height: 150px;
+}
+#contact .card .contactForm form input::-webkit-input-placeholder, #contact .card .contactForm form textarea::-webkit-input-placeholder {
+  color: #4e4e4e;
+}
+#contact .card .contactForm form input::-moz-placeholder, #contact .card .contactForm form textarea::-moz-placeholder {
+  color: #4e4e4e;
+}
+#contact .card .contactForm form input:-ms-input-placeholder, #contact .card .contactForm form textarea:-ms-input-placeholder {
+  color: #4e4e4e;
+}
+#contact .card .contactForm form input::-ms-input-placeholder, #contact .card .contactForm form textarea::-ms-input-placeholder {
+  color: #4e4e4e;
+}
+#contact .card .contactForm form input::placeholder, #contact .card .contactForm form textarea::placeholder {
+  color: #4e4e4e;
+}
+#contact .card .contactForm form input:focus, #contact .card .contactForm form textarea:focus {
+  outline: 3px solid #cde1f8;
+}
+#contact .card .contactForm form .btnMain {
+  background-color: #0078ff;
+  color: #f5f5f5;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#contact .card .contactForm form .btnMain:hover {
+  background-color: #00B1FF;
+  outline: 4px solid #cde1f8;
+}
+#contact .card .contactInfo p {
+  color: #4e4e4e;
+  font-size: 20px;
+}
+#contact .card .contactInfo ul li .icon {
+  color: #0078ff;
+  margin-right: 10px;
+}
+#contact .card .contactInfo .social span {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #0078ff;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #0078ff;
+}
+footer .content a {
+  color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.facebook {
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.facebook:hover {
+  color: #1877f2 !important;
+}
+
+.twitter {
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.twitter:hover {
+  color: #1da1f2 !important;
+}
+
+.dribble {
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.dribble:hover {
+  color: #9ba5a8 !important;
+}
+
+.google {
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.google:hover {
+  color: #dd4b39 !important;
+}
+
+.github {
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.github:hover {
+  color: #333 !important;
+}
+
+.instagram {
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.instagram:hover {
+  color: #e1306c !important;
+}
+/*# sourceMappingURL=main.css.map */

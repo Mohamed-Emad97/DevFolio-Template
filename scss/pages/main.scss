@@ -1,0 +1,46 @@
+//Import Files
+
+//Variblies File
+@use "../variblies/variblies.scss" as *;
+
+//Mixin File 
+@use "../helpers/mixin.scss" as *;
+
+//Header Section File
+@use "../sections/Header.scss" as *;
+
+//Home Section File
+@use "sections/Home.scss" as *;
+
+//Post Section File 
+@use "sections/Post.scss" as *;
+
+//Comment Section File 
+@use "sections/Comment.scss" as *;
+
+//Reply Section File 
+@use "sections/Reply.scss" as *;
+
+//Search Section File 
+@use "sections/Search.scss" as *;
+
+//RecentPosts Section File 
+@use "sections/RecentPosts.scss" as *;
+
+//Archives Section File 
+@use "sections/Archives.scss" as *;
+
+//Tags Section File 
+@use "sections/Tags.scss" as *;
+
+//Footer Section File 
+@use "../sections/Footer.scss" as *;
+
+//Global Rules
+.center{
+    @include center();
+}
+
+body{
+    background-color: $boder-color;
+}

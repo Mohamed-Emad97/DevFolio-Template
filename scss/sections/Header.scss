@@ -1,0 +1,29 @@
+// Files Imports
+
+//Import Variblies File
+@use "../variblies/variblies.scss" as *;
+
+//Import Mixin File
+@use "../helpers/mixin.scss" as *;
+
+header{
+    z-index: 3000000;
+    nav{
+        .link{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 5px;
+                bottom: -5px;
+                width: 0;
+                height: 2px;
+                background-color: $alt-text-color;
+                transition: all $trasition-time;
+            }
+            &:hover::before{
+                width: 85%;
+            }
+        }
+    }
+}

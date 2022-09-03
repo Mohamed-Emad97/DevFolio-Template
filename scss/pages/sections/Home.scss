@@ -1,0 +1,32 @@
+//Import Files 
+
+//Variblies File
+@use "../../variblies/variblies.scss" as *;
+
+//Mixin File
+@use "../../helpers/mixin.scss" as *;
+
+#home{
+    height: 50vh;
+    background-image: url(../../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    &::after{
+        content: "";
+        @include overlay(rgba(0,120,255,0.3), 0);
+    }
+    .caption{
+        z-index: 22;
+        color: $alt-text-color;
+        span{
+            font-size: 18px;
+            margin: 0 5px;
+        }
+        .light{
+            cursor: pointer;
+        }
+        .disabled{
+            opacity: 0.5;
+        }
+    }
+}

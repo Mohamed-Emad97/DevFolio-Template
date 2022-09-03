@@ -1,0 +1,23 @@
+// Files Imports
+
+//Import Variblies File
+@use "../variblies/variblies.scss" as *;
+
+//Import Mixin File
+@use "../helpers/mixin.scss" as *;
+
+#testmionail{
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    &::after{
+        content: "";
+        @include overlay(rgba(0,120,255,0.4), 0);
+    }
+    .content{
+        position: relative;
+        z-index: 22;
+        gap: 20px;
+        
+    }
+}
